@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Dmitry Smirnov](https://htmlacademy.ru/profile/id640199).
-* Наставник: Александр Кошара (https://htmlacademy.ru/profile/rednaxxxela).
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 

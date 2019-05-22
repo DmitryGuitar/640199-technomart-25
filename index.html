@@ -61,7 +61,7 @@
       <ul class="nav-footer">
         <li><a href="#">Компания</a></li>
         <li><a href="#">Новости</a></li>
-        <li><a href="#">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
@@ -90,5 +90,28 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
     </div>
   </footer>
+  <section class="feedback-form">
+    <form class="feedback-popup" action="https://echo.htmlacademy.ru" method="get">
+      <label>
+        <b>Ваше имя:</b><input type="text" name="user-name" placeholder="Имя Фамилия">
+      </label>
+      <label>
+        <b>Ваш e-mail:</b><input type="text" name="e-mail" placeholder="email@example.com">
+      </label>
+      <label>
+        <b>Текст письма:</b><textarea name="e-mail" placeholder="В свободной форме">
+        </textarea>
+      </label> 
+    </form>
+    <button class="button-submit" type="submit">Отправить</button>
+    <button type="button" class="button-close">x</button>
+  </section>
+  <section class="map">
+    <h2 class="visually-hidden">Наш адрес</h2>
+    <p>
+      <img src="img/map-big.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+    </p>  
+    <button type="button" class="button-close">x</button>
+  </section>
   </body>
 </html>

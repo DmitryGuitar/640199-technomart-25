@@ -40,13 +40,61 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">
           <img src="img/home.svg" alt="home" width="15" height="15"></a></li>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
       <h2 class="page-title">Перфораторы</h2>
-      <section class="filters">
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form method="get" action="https://echo.htmlacademy.ru" class="filter-form">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input type="checkbox" name="Bosch" checked>Bosch
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input type="checkbox" name="Interskol">Интерскол
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input type="checkbox" name="Makita" checked>Makita
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input type="checkbox" name="Dewalt">Dewalt
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input type="checkbox" name="Hitachi">Hitachi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input type="radio" name="product-group" value="battery" checked>Аккумуляторные
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input type="radio" name="product-group" value="network">Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <button type="submit" class="filter-button">Показать</button>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
@@ -251,5 +299,11 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
     </footer>
+    <section class="add-to-cart">
+      <p>Товар добавлен в корзину!</p>
+      <a class="button" href="#">Оформить заказ</a>
+      <button type="button" class="close">Продолжить покупки</button>
+      <button type="button" class="button-close">x</button>
+    </section>
   </body>
 </html>

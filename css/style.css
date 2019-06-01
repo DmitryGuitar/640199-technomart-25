@@ -1,30 +1,52 @@
-@charset "utf-8";
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/cuprum-400-normal.woff2") format("woff2"),
+         url("../fonts/cuprum-400-normal.woff") format("woff"); 
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Pt sans regular";
+    src: url("../fonts/ptsans-400-normal.woff2") format("woff2"),
+         url("../fonts/ptsans-400-normal.woff") format("woff"); 
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Pt sans bold";
+    src: url("../fonts/ptsans-700-normal.woff2") format("woff2"),
+         url("../fonts/ptsans-700-normal.woff") format("woff"); 
+    font-weight: 700;
+    font-style: normal;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', "Helvetica", sans-serif;
+  font-family: "Cuprum", "Helvetica", sans-serif;
   background-color: #fff;
   font-size: 13px;
   line-height: 24px;
 }
 .nav-top,
-.main-nav{
+.nav-main {
   font-size: 17px;
   line-height: 18px;
+}
+.nav-top {
   background-color: #293449;
   color: #fff;
 }
-.nav-top a,
-.main-nav a{
-  color: #fff;
-}
-.main-nav {
+.nav-main {
   background-color: #32425c;
 }
-.main-nav a:hover {
+.nav-top a,
+.nav-main a {
+  color: #fff;
+}
+.nav-main a:hover {
   background-color: #293449;
 }
-.main-nav a:active {
+.nav-main a:active {
   background-color: #1d2739;
   color: #8e939c;
 }
@@ -61,10 +83,7 @@ body {
 a {
   text-decoration: none;
 }
-ul {
-  list-style: none;
-}
-header h1 {
+.main-header h1 {
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -86,6 +105,16 @@ header h1 {
   font-size: 21px;
   line-height: 21px;
 } 
+.user-navigation,
+.nav-main ul,
+.nav-footer,
+.nav-products,
+.footer-social,
+.breadcrumbs,
+.filter-form ul,
+.catalog-list {
+  list-style: none;
+}
 .user-navigation a:hover {
   color: #ee3643;
 }
@@ -96,7 +125,7 @@ header h1 {
 }
 .breadcrumbs,
 .breadcrumbs a {
-  font-family: "Pt sans", sans-serif;
+  font-family: "Pt sans regular", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000;
@@ -109,7 +138,7 @@ header h1 {
   text-transform: uppercase;
 }
 .filter-form legend {
-  font-family: "Pt sans", sans-serif;
+  font-family: "Pt sans bold", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -117,14 +146,14 @@ header h1 {
   text-transform: uppercase;
 }
 .filter-option span {
-  font-family: "Pt sans", sans-serif;
+  font-family: "Pt sans regular", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #000;
   text-transform: uppercase;
 }
 .filter-button {
-  font-family: "Pt sans", sans-serif;
+  font-family: "Pt sans regular", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000;
@@ -133,7 +162,7 @@ header h1 {
   border: 1px solid #e5e5e5;
 }
 .catalog-item {
-  font-family: "Pt sans", sans-serif;
+  font-family: "Pt sans bold", "Arial", sans-serif;
 }
 .old-price {
   font-size: 17px;
@@ -164,6 +193,7 @@ header h1 {
 .list-of-companies {
   font-size: 18px;
   line-height: 20px;
+  list-style: none;
 }
 .main-button {
   color: #fff;
@@ -183,7 +213,7 @@ header h1 {
 }
 .main-footer-top a,
 .main-footer-bottom a,
-.footer-contacts{
+.footer-contacts {
   color: #fff;
 }
 .main-footer-top a:hover {
@@ -199,10 +229,10 @@ header h1 {
   font-size: 16px;
   line-height: 18px;
 }
-.nav-products a{
+.nav-products a {
   color: #ffda96;
 }
-.nav-products a:active{
+.nav-products a:active {
   color: #998a6e;
   text-decoration: none;
 }
